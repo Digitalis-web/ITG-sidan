@@ -1,0 +1,277 @@
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li {
+	display: block;
+	position: relative;
+	float: left;
+	height:100%;
+}
+
+/* Effects only the direct children*/
+#drop_nav > li {
+	/* Makes the div into a paralellogram*/
+	/*-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);*/
+	
+}
+
+li ul li a {
+	padding-bottom:20px;
+}
+
+li ul {
+	display: none;
+}
+
+.nav_p {
+	padding:0;
+	margin:0;
+	
+	display:block;
+	
+	/* Centers vertically */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor:pointer;
+}
+
+
+
+ul li a
+{
+	height:100%;
+	display: block;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	white-space: nowrap;
+	color: black;
+	text-transform:uppercase;
+	position:relative;
+	font-weight:800;
+	content: 'viewport-units-buggyfill; font-size: 1.4vw';
+	font-size:1.4vw;
+}
+
+ul li a:hover {
+	background: #B3C2BF;
+	cursor:pointer;
+}
+
+li:hover ul {
+	display: block; 
+	position: absolute;
+}
+
+li:hover li {
+	float: none;
+}
+
+li:hover a {
+	background: #B3C2BF;
+}
+
+li:hover li a:hover {
+	background: #E9ECE5;
+}
+
+#drop_nav li ul li {
+	border-top: 0px;
+}
+
+#drop_nav {
+	float:right;
+	margin-right:15%;
+	z-index:3;
+	height:100%;
+}
+
+
+.hori_line {
+	position:absolute;
+	left:0;
+	top:0%;
+	background:rgba(0,0,0,0);
+	border-bottom: 2px solid rgba(192,223,217,1);
+	width:100%;
+	height:12%;
+	z-index:3;
+}		
+/*
+	.vertical_line {
+	position:fixed;
+	width:20%;
+	
+	top:0;
+	right:10%;
+	background:rgba(192,223,217,1);
+	z-index:1;
+	height:100%;
+	}
+*/
+/* This div will appear as if it is inside the vertical_line */
+/*.all_logos_container {
+	width:20%;
+	position:absolute;
+	top:25%;
+	right:10%;
+	float:left;
+	z-index:2;
+	}
+	
+	.all_logos_container p {
+	content: 'viewport-units-buggyfill; font-size: 1.3vw';
+	font-size: 1.3vw;
+	text-align:center;
+	}
+	
+	.logo_container {
+	width:100%;
+	margin-bottom:7%;
+}*/
+
+/* Since all the logos from the different schools have very different dimensions, they all need to have seperate IDs to 
+	give them different sizes so that they all appear to be about the same size
+	*//*
+	#KTK {
+	width:80%;
+	margin-left:10%;
+	}
+	
+	#RVT {
+	width:40%;
+	margin-left:30%;
+	}
+	
+	#ITG {
+	width:50%;
+	margin-left:25%;
+	}
+	
+	#NORD {
+	width:80%;
+	margin-left:10%;
+}*/
+
+
+.login_info{
+	position:absolute;
+	top:0;
+	right:0%;
+	width:10%;
+	height:12%;
+	z-index:3;
+	text-align:center;
+}
+
+.login_info p{
+	margin:0;
+	font-size:0.9vw;
+	content: 'viewport-units-buggyfill; font-size: 0.9vw';
+}
+
+.wide_form{
+	width:80% !important;
+	margin-left:10% !important;
+}
+
+.form h3{
+	margin-bottom:0;
+}
+.form {
+	width:30%;
+	float:left;
+	position:fixed;
+	z-index:11;
+	background:white;
+	text-align:center;
+	padding-bottom:100px;
+	padding-top:30px;
+	overflow:auto;
+	max-height:80%;
+	margin-left:35%;
+	margin-top:0;
+	
+}
+.form h1, .form h2, .form h3, .form h4,.form h5{
+	color:black;
+}
+
+.form p{
+	color:black;
+}
+
+.form h1 {
+	font-size:3em;
+}
+
+.form p{
+	color:black;
+	font-size:1.2em;
+	margin-bottom:10px;
+}
+
+.form textarea {
+	height:200px;
+}
+
+
+.form input, .form textarea, .form select{
+	width:60%;	
+	margin-top:20px;
+	
+	
+    border: 2px solid #C0DFD9;
+    padding: 7px;
+	resize:none;
+	color:black;
+	box-sizing: content-box;
+}
+
+option {
+	color:black;
+}
+
+/* For some reason, the select element it two pixels too far to the left. This will make it look right*/
+.form select{
+	position: relative;
+	left:2px;
+}
+
+.form input[type=submit]{
+	cursor:pointer;
+}
+
+#form_container {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba(200, 200, 200, 0.9);
+	z-index:10;
+	display:none;
+}
+
+
+
+.highlight {
+	background: #B3C2BF;
+}
+
+.project_name{
+	float:left;
+margin-left:15%;
+content: 'viewport-units-buggyfill; font-size: 1.5vw';
+font-size:1.5vw;
+}
+
+
